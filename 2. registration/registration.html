@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>Trang chủ HLK Championship</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/1. homepage/homepage.css" rel="stylesheet">
+    <link href="registration.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/long-shot" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <script src="registration.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container1">
+        <h1><a>HLK Championship</a></h1>
+        <nav>
+          <ul>
+            <li><a href="/1. homepage/homepage.html">Trang chủ</a></li>
+            <li><a href="registration.html">Đăng ký</a></li>
+            <li><a href="/3. rule/rule.html">Thể lệ</a></li>
+            <li><a href="/4. list/list.html">Danh sách</a></li>
+            <li style="float: right;"><a href="contact.html">Liên hệ hợp tác</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+        <div>
+            <h2 style="font-size: 32px; text-align: center; margin-top: 10px; padding: 10px; color: #3e5b99;">Biểu mẫu đăng ký tham gia giải đấu</h2>
+            <form>
+                <div class="inputdau">
+                    <input id="groupname" type="text" placeholder="Tên đội" name="groupname" required><br>
+                    <input id="grpname" type="text" placeholder="Tên viết tắt của đội (3 chữ cái)" name="grpname" required><br>
+                    <input id="slogan" type="text" placeholder="Khẩu hiệu (nếu có)" name="slogan"><br>
+                </div>
+                <div class="table">
+                    <table id="membertable">
+                        <tr class="hang1">
+                          <td class="cot1"><label for="membername">Tên thành viên</label></td>
+                          <td class="cot2"><label for="schoolyear">Khối</label></td>
+                          <td class="cot3"><label for="year">Khoá</label></td>
+                          <td class="cot4"><label for="ingame">Tên ingame</label></td>
+                          <td class="cot5"><label for="gameuid">UID</label></td>
+                          <td class="cot6"><label for="lane">Lane</label></td>
+                          <td class="cot7"><label for="leader">Đội trưởng</label></td>
+                        </tr>
+                        <tr class="hang2">
+                          <td><input class="tenthanhvien" type="text" id="membername1" name="membername1" required></td>
+                          <td><div class="select">
+                                <select class="selectsy" id="schoolyear2" name="schoolyear1" required>
+                                  <option value="Van">Văn</option>
+                                  <option value="Toan">Toán</option>
+                                  <option value="Li">Lí</option>
+                                  <option value="Hoa">Hoá</option>
+                                  <option value="Sinh">Sinh</option>
+                                  <option value="Anh">Anh</option>
+                                  <option value="Tin">Tin</option>
+                                  <option value="Su">Sử</option>
+                                  <option value="Nguon1">Nguồn 1</option>
+                                  <option value="Nguon2">Nguồn 2</option>
+                                </select>
+                              </div>
+                          </td>
+                          <td><div class="select">
+                            <select class="selecty" id="year1" name="year1" required>
+                              <option value="K28">K28</option>
+                              <option value="K29">K29</option>
+                              <option value="K30">K31</option>
+                              <option value="K31">K31</option>
+                          </select>
+                          </div></td>
+                          <td><input class="teningame" type="text" id="ingame1" name="ingame1" required></td>
+                          <td><input class="gameuid" type="text" id="gameuid1" name="gameuid1" required></td>
+                          <td><div class="select">
+                            <select class="selectlane" id="lane1" name="lane1" required>
+                              <option value="Top">Solo Top</option>
+                              <option value="Mid">Mid</option>
+                              <option value="Bot">AD Carry</option>
+                              <option value="Support">Support</option>
+                              <option value="Jungle">Jungler</option>
+                          </select>
+                          </div></td>
+                          <td><input type="radio" id="leader" name="leader" required></td>
+                        </tr>
+                        <tr class="hang3">
+                            <td><input class="tenthanhvien" type="text" id="membername2" name="membername2" required></td>
+                            <td>
+                              <div class="select">
+                                <select class="selectsy" id="schoolyear2" name="schoolyear2" required>
+                                  <option value="Van">Văn</option>
+                                  <option value="Toan">Toán</option>
+                                  <option value="Li">Lí</option>
+                                  <option value="Hoa">Hoá</option>
+                                  <option value="Sinh">Sinh</option>
+                                  <option value="Anh">Anh</option>
+                                  <option value="Tin">Tin</option>
+                                  <option value="Su">Sử</option>
+                                  <option value="Nguon1">Nguồn 1</option>
+                                  <option value="Nguon2">Nguồn 2</option>
+                                </select>
+                              </div>
+                            </td>
+                            <td><div class="select">
+                              <select class="selecty" id="year2" name="year2" required>
+                                <option value="K28">K28</option>
+                                <option value="K29">K29</option>
+                                <option value="K30">K31</option>
+                                <option value="K31">K31</option>
+                            </select>
+                            </div></td>
+                            <td><input class="teningame" type="text" id="ingame2" name="ingame2" required></td>
+                            <td><input class="gameuid" type="text" id="gameuid2" name="gameuid2" required></td>
+                            <td><div class="select">
+                              <select class="selectlane" id="lane2" name="lane2" required>
+                                <option value="Top">Solo Top</option>
+                                <option value="Mid">Mid</option>
+                                <option value="Bot">AD Carry</option>
+                                <option value="Support">Support</option>
+                                <option value="Jungle">Jungler</option>
+                            </select>
+                            </div></td>
+                            <td><input type="radio" id="leader" name="leader" required></td>
+                          </tr>
+                          <tr class="hang4">
+                            <td><input class="tenthanhvien" type="text" id="membername3" name="membername3" required></td>
+                            <td><div class="select">
+                                <select class="selectsy" id="schoolyear2" name="schoolyear3" required>
+                                  <option value="Van">Văn</option>
+                                  <option value="Toan">Toán</option>
+                                  <option value="Li">Lí</option>
+                                  <option value="Hoa">Hoá</option>
+                                  <option value="Sinh">Sinh</option>
+                                  <option value="Anh">Anh</option>
+                                  <option value="Tin">Tin</option>
+                                  <option value="Su">Sử</option>
+                                  <option value="Nguon1">Nguồn 1</option>
+                                  <option value="Nguon2">Nguồn 2</option>
+                                </select>
+                              </div>
+                            </td>
+                            <td><div class="select">
+                              <select class="selecty" id="year3" name="year3" required>
+                                <option value="K28">K28</option>
+                                <option value="K29">K29</option>
+                                <option value="K30">K31</option>
+                                <option value="K31">K31</option>
+                            </select>
+                            </div></td>
+                            <td><input class="teningame" type="text" id="ingame3" name="ingame3" required></td>
+                            <td><input class="gameuid" type="text" id="gameuid3" name="gameuid3" required></td>
+                            <td><div class="select">
+                              <select class="selectlane" id="lane3" name="lane3" required>
+                                <option value="Top">Solo Top</option>
+                                <option value="Mid">Mid</option>
+                                <option value="Bot">AD Carry</option>
+                                <option value="Support">Support</option>
+                                <option value="Jungle">Jungler</option>
+                            </select>
+                            </div></td>
+                            <td><input type="radio" id="leader" name="leader" required></td>
+                          </tr>
+                          <tr class="hang5">
+                            <td><input class="tenthanhvien" type="text" id="membername4" name="membername4" required></td>
+                            <td><div class="select">
+                                <select class="selectsy" id="schoolyear2" name="schoolyear4" required>
+                                  <option value="Van">Văn</option>
+                                  <option value="Toan">Toán</option>
+                                  <option value="Li">Lí</option>
+                                  <option value="Hoa">Hoá</option>
+                                  <option value="Sinh">Sinh</option>
+                                  <option value="Anh">Anh</option>
+                                  <option value="Tin">Tin</option>
+                                  <option value="Su">Sử</option>
+                                  <option value="Nguon1">Nguồn 1</option>
+                                  <option value="Nguon2">Nguồn 2</option>
+                                </select>
+                              </div>
+                            </td>
+                            <td><div class="select">
+                              <select class="selecty" id="year4" name="year4" required>
+                                <option value="K28">K28</option>
+                                <option value="K29">K29</option>
+                                <option value="K30">K31</option>
+                                <option value="K31">K31</option>
+                            </select>
+                            </div></td>
+                            <td><input class="teningame" type="text" id="ingame4" name="ingame4" required></td>
+                            <td><input class="gameuid" type="text" id="gameuid4" name="gameuid4" required></td>
+                            <td><div class="select">
+                              <select class="selectlane" id="lane4" name="lane4" required>
+                                <option value="Top">Solo Top</option>
+                                <option value="Mid">Mid</option>
+                                <option value="Bot">AD Carry</option>
+                                <option value="Support">Support</option>
+                                <option value="Jungle">Jungler</option>
+                            </select>
+                            </div></td>
+                            <td><input type="radio" id="leader" name="leader" required></td>
+                          </tr>
+                          <tr class="hang6">
+                            <td><input class="tenthanhvien" type="text" id="membername5" name="membername5" required></td>
+                            <td><div class="select">
+                                <select class="selectsy" id="schoolyear2" name="schoolyear5" required>
+                                  <option value="Van">Văn</option>
+                                  <option value="Toan">Toán</option>
+                                  <option value="Li">Lí</option>
+                                  <option value="Hoa">Hoá</option>
+                                  <option value="Sinh">Sinh</option>
+                                  <option value="Anh">Anh</option>
+                                  <option value="Tin">Tin</option>
+                                  <option value="Su">Sử</option>
+                                  <option value="Nguon1">Nguồn 1</option>
+                                  <option value="Nguon2">Nguồn 2</option>
+                                </select>
+                              </div>
+                            </td>
+                            <td><div class="select">
+                              <select class="selecty" id="year5" name="year5" required>
+                                <option value="K28">K28</option>
+                                <option value="K29">K29</option>
+                                <option value="K30">K31</option>
+                                <option value="K31">K31</option>
+                            </select>
+                            </div></td>
+                            <td><input class="teningame" type="text" id="ingame5" name="ingame5" required></td>
+                            <td><input class="gameuid" type="text" id="gameuid5" name="gameuid5" required></td>
+                            <td><div class="select">
+                              <select class="selectlane" id="lane5" name="lane5" required>
+                                <option value="Top">Solo Top</option>
+                                <option value="Mid">Mid</option>
+                                <option value="Bot">AD Carry</option>
+                                <option value="Support">Support</option>
+                                <option value="Jungle">Jungler</option>
+                            </select>
+                            </div></td>
+                            <td><input type="radio" id="leader" name="leader" required></td>
+                          </tr>
+                          <tr class="hang7">
+                            <td><input class="tenthanhvien" type="text" id="membername6" name="membername6"></td>
+                            <td><div class="select">
+                                <select class="selectsy" id="schoolyear2" name="schoolyear6">
+                                  <option value="Van">Văn</option>
+                                  <option value="Toan">Toán</option>
+                                  <option value="Li">Lí</option>
+                                  <option value="Hoa">Hoá</option>
+                                  <option value="Sinh">Sinh</option>
+                                  <option value="Anh">Anh</option>
+                                  <option value="Tin">Tin</option>
+                                  <option value="Su">Sử</option>
+                                  <option value="Nguon1">Nguồn 1</option>
+                                  <option value="Nguon2">Nguồn 2</option>
+                                </select>
+                              </div>
+                            </td>
+                            <td><div class="select">
+                              <select class="selecty" id="year6" name="year6">
+                                <option value="K28">K28</option>
+                                <option value="K29">K29</option>
+                                <option value="K30">K31</option>
+                                <option value="K31">K31</option>
+                            </select>
+                            </div></td>
+                            <td><input class="teningame" type="text" id="ingame6" name="ingame6"></td>
+                            <td><input class="gameuid" type="text" id="gameuid6" name="gameuid6"></td>
+                            <td><div class="select">
+                              <select class="selectlane" id="lane6" name="lane6">
+                                <option value="Top">Solo Top</option>
+                                <option value="Mid">Mid</option>
+                                <option value="Bot">AD Carry</option>
+                                <option value="Support">Support</option>
+                                <option value="Jungle">Jungler</option>
+                            </select>
+                            </div></td>
+                            <td><input type="radio" id="leader" name="leader"></td>
+                          </tr>
+                          <tr class="hang8">
+                            <td><input class="tenthanhvien" type="text" id="membername7" name="membername7"></td>
+                            <td><div class="select">
+                                <select class="selectsy" id="schoolyear2" name="schoolyear7">
+                                  <option value="Van">Văn</option>
+                                  <option value="Toan">Toán</option>
+                                  <option value="Li">Lí</option>
+                                  <option value="Hoa">Hoá</option>
+                                  <option value="Sinh">Sinh</option>
+                                  <option value="Anh">Anh</option>
+                                  <option value="Tin">Tin</option>
+                                  <option value="Su">Sử</option>
+                                  <option value="Nguon1">Nguồn 1</option>
+                                  <option value="Nguon2">Nguồn 2</option>
+                                </select>
+                              </div>
+                            </td>
+                            <td><div class="select">
+                              <select class="selecty" id="year7" name="year7">
+                                <option value="K28">K28</option>
+                                <option value="K29">K29</option>
+                                <option value="K30">K31</option>
+                                <option value="K31">K31</option>
+                            </select>
+                            </div></td>
+                            <td><input class="teningame" type="text" id="ingame7" name="ingame7"></td>
+                            <td><input class="gameuid" type="text" id="gameuid7" name="gameuid7"></td>
+                            <td><div class="select">
+                              <select class="selectlane" id="lane7" name="lane7">
+                                <option value="Top">Solo Top</option>
+                                <option value="Mid">Mid</option>
+                                <option value="Bot">AD Carry</option>
+                                <option value="Support">Support</option>
+                                <option value="Jungle">Jungler</option>
+                            </select>
+                            </div></td>
+                            <td><input type="radio" id="leader" name="leader"></td>
+                          </tr>
+                          <tr class="hang9">
+                            <td><input class="tenthanhvien" type="text" id="membername8" name="membername8"></td>
+                            <td><div class="select">
+                                <select class="selectsy" id="schoolyear2" name="schoolyear8">
+                                  <option value="Van">Văn</option>
+                                  <option value="Toan">Toán</option>
+                                  <option value="Li">Lí</option>
+                                  <option value="Hoa">Hoá</option>
+                                  <option value="Sinh">Sinh</option>
+                                  <option value="Anh">Anh</option>
+                                  <option value="Tin">Tin</option>
+                                  <option value="Su">Sử</option>
+                                  <option value="Nguon1">Nguồn 1</option>
+                                  <option value="Nguon2">Nguồn 2</option>
+                                </select>
+                              </div>
+                            </td>
+                            <td><div class="select">
+                              <select class="selecty" id="year8" name="year8">
+                                <option value="K28">K28</option>
+                                <option value="K29">K29</option>
+                                <option value="K30">K31</option>
+                                <option value="K31">K31</option>
+                            </select>
+                            </div></td>
+                            <td><input class="teningame" type="text" id="ingame8" name="ingame8"></td>
+                            <td><input class="gameuid" type="text" id="gameuid8" name="gameuid8"></td>
+                            <td><div class="select">
+                              <select class="selectlane" id="lane8" name="lane8">
+                                <option value="Top">Solo Top</option>
+                                <option value="Mid">Mid</option>
+                                <option value="Bot">AD Carry</option>
+                                <option value="Support">Support</option>
+                                <option value="Jungle">Jungler</option>
+                            </select>
+                            </div></td>
+                            <td><input type="radio" id="leader" name="leader"></td>
+                          </tr>
+                      </table>
+                </div>
+                <div class="anhchuyenkhoan"><label>Tải lên ảnh chụp màn hình chuyển khoản</label><input class="screenshot" type="file" id="screenshot" name="screenshot" placeholder accept=".jpg, .jpeg, .png" required><br></div>
+                <div class="tick"><input type="checkbox" id="eula" name="eula" required><label> Bằng việc ấn nút đăng ký, bạn đã đồng ý với Điều lệ giải đấu</label></div>
+                <div class="dangky"><input type="submit" id="submit" name="submit" value="Đăng ký"></div>
+            </form>
+        </div>
+    </main>

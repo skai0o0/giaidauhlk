@@ -1,0 +1,174 @@
+form {
+    justify-content: center;
+    align-items: center;
+    background-color:antiquewhite;
+    border-radius: 5px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px #000 solid;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: antiquewhite;
+}
+
+input::placeholder {
+    color: #000;
+  }
+
+input:focus {
+    border: 0;
+    border-radius: 0;
+}
+
+#groupname, #grpname, #slogan {
+    transition: all 0.3s ease-in-out;
+}
+
+#groupname:focus, #grpname:focus, #slogan:focus {
+    transform: scale(1.05);
+    border-color: #333;
+  }
+
+.inputdau {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+  }
+
+table {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    input {border: 0; width: 200px;}
+}
+
+td, tr {
+    border: #333 1px solid;
+}
+
+tr {
+  height: 40px;
+}
+
+.cot2, .cot3, .cot6 {
+  width: 100px;
+}
+
+.cot1, .cot4, .cot5 {
+  width: 200px;
+}
+
+.cot7 {width: 50px;}
+
+.hang1 {
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+.checkbox {
+    align-items: center;
+}
+
+.selectsy, .selecty, .selectlane {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.selectsy select, .selecty select, .selectlane select {
+    display: none;
+}
+
+/* SELECT */
+:root {
+    --gray: #34495e;
+    --darkgray: #2c3e50;
+  }
+  
+  select {
+    /* Reset Select */
+    appearance: none;
+    outline: 10px red;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color: #fff;
+    background-color: var(--darkgray);
+    background-image: none;
+    cursor: pointer;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select wrapper */
+  .select {
+    position: relative;
+    display: flex;
+    width: auto;
+    height: 40px;
+    overflow: hidden;
+  }
+  /* Arrow */
+  .select::after {
+    display: flex;
+    align-items: center;
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    background-color: #34495e;
+    transition: .25s all ease;
+    pointer-events: none;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: #14a1d6;
+  }
+  
+  /* Other styles*/
+  body {
+    color: #fff;
+    background: var(--background-gradient);
+  }
+
+  .screenshot {
+    width: 200px;
+    height: 30px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .screenshot::-webkit-file-upload-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  label {
+    color: #333;
+  }
+  
+  input[type="submit"] {
+    background: #14a1d6;
+    color: #fff;
+    border: 0;
+  }
